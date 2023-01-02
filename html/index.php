@@ -5,9 +5,9 @@ require_once('header.php');
 $allGraves = find_graves();
 $graves = [];
 
-// while ($grave = mysqli_fetch_assoc($allGraves)) {
-//     $graves[] = $grave;
-// }
+while ($grave = mysqli_fetch_assoc($allGraves)) {
+    $graves[] = $grave;
+}
 
 
 ?>

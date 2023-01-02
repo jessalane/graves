@@ -98,5 +98,3 @@
             header("Location: uploadForm.php");
         } 
     }
-
-?>
