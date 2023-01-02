@@ -1,0 +1,521 @@
+                        /* ============ GENERAL ============ */
+
+body { 
+    font-family: 'Raleway', sans-serif; 
+    font-size: 14px;
+    width: 100%;
+}
+
+body header img {
+    width: 100%;
+    padding: 0;
+}
+
+                        /* ============ GLOBAL ============ */
+
+h1,h2,h3,h4,h5,h6 {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-weight: normal;
+}
+
+h1 {
+    text-align: center;
+    padding: -10 0 30 0;
+    border-bottom: 1px solid #000;
+}
+
+h2 {
+    margin-left: 10px;
+}
+
+body p {
+    padding: 0px 20px;
+}
+
+body form {
+    text-align: center;
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+}
+
+.container h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+}
+
+.container h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+.container h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+.container p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+                        /* ============ MODAL ============ */
+
+.modalDialog {
+	position: fixed;
+	font-family: 'Raleway', sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba (0,0,0,0.8);
+	z-index: 9999;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 500px;
+    position: relative;
+    margin: 10% auto;
+    background: #fff;
+}
+
+.close {
+    background: #606061;
+    color: #fff;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    -moz-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+close:hover {
+    background: #808080;
+}
+
+            /* ============ UPLOAD ============ */
+
+.upload {
+    font-family: 'Raleway', sans-serif;
+    padding: 0px 30px;
+    background: #fff;
+    margin: auto;
+    text-align: left;
+}
+
+.upload h2 {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    padding: 0px 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.upload form label { 
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    margin: 0px 0px -20px 5px;
+}
+.upload input[type="text"] {
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 5px; 
+    border: none; 
+    border-bottom: 1px solid #ddd;
+    background: transparent; 
+    font: 16px 'Raleway', sans-serif;
+    height: 45px; 
+}
+.upload input[type="file"] {
+    width: 100%;
+    box-align: left;
+}
+.errors {
+    border: 1px solid #BE0000;
+    color: #BE0000;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px 0px 10px 100px;
+    font: 16px 'Raleway', sans-serif;
+}
+
+
+                        /* ============ FORMS ============ */
+
+.login {
+    font-family: 'Raleway', sans-serif;
+    width: 500px;
+    padding: 30px;
+    background: #fff;
+    margin: 50px auto;
+}
+
+.login h2 {
+    background: #4d4d4d;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 20px;
+    margin: -30px -30px 30px -30px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="time"],
+input[type="url"],
+input[type="password"],
+textarea,
+select { 
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px; 
+    border: none; 
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px; 
+    font: 16px 'Raleway', sans-serif;
+    height: 45px; 
+}
+
+.login input[type="submit"], 
+.login input[type="button"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: #4d4d4d;
+    color: #fff; 
+    border-top-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-right-style: none;
+}
+
+.login input[type="submit"]:hover,
+.login input[type="button"]:hover{
+    background: #808080;
+}
+
+.search input[type="search"] {
+    color: #fff;
+    text-align: center;
+    background-image: url(../images/search_icon.png);
+    background-position: 10px 20px;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+}
+
+.search input[type="search"]:hover {
+    background: rgba(255,255,255,.08);
+}
+
+                        /* ============ NAVIGATION ============ */
+
+nav ul {
+	list-style-type: none;
+	padding: 5px;
+	margin: 0;
+	overflow: auto;
+	background-color: #000;
+	opacity: 0.8;
+}
+
+nav ul li {
+	float: left;
+	font-family: 'Raleway', sans-serif;
+}
+
+nav .login ul {
+    list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+ul li a {
+	display: block;
+	color: #808080;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+nav ul li a:hover { 
+	color: #fff;
+}
+
+                        /* ============ HERO ============ */
+                        
+#hero {
+    background-image:url("../images/graveyard_small.jpg"); 
+    background-position: center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+    margin-top: -10px;
+} 
+
+#hero h1 {
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    border-bottom: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+#hero .search form { 
+    margin: auto;
+    width: 250px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+                        /* ============ DISCRIPTION ============ */
+
+#discription {
+    width: 960px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#discription h2 {
+    text-align: center;
+}
+
+                        /* ============ INDEX CLASSES ============ */
+
+#classes {
+    width: 960px;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+.w3-card-2 {
+    width: 400px;
+    height: 500px;
+    margin: 15px 40px;
+    padding: 15px;
+}
+
+#classes img {
+    width: 100%;
+}
+
+                        /* ============ GRAVE TABLE CLASSES ============ */
+
+#graves table {
+    display: inline-block;
+    margin: 20px auto;
+}
+#graves table tr {
+    
+}
+#graves table tr td {
+    padding: 10px;
+    border: 1px solid #000;
+}
+#graves img { 
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+}
+
+
+                        /* ============ ABOUT CLASSES ============ */
+#started h2 {
+    text-align: left;
+}
+#team {
+    width: 800px;
+    margin: 30px auto 0;
+}
+
+#nicky {
+    background-image: url('../images/nicky.jpg');
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    padding: 0;
+}
+
+#nick {
+    background-image: url('../images/nick.jpg');
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    padding: 0;
+}
+
+.meetname {
+    font-size: 18px;
+    margin: -20px auto 0 -100px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+}
+
+.meet {
+    width: 450px;
+    height: 180px;
+    margin: -20px auto 0 -100px;
+    overflow: auto;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+}
+
+                        /* ============ FAQ CLASSES ============ */
+
+#faq h2 {
+    text-align: left;
+}
+
+
+                        /* ============ CONTACT CLASSES ============ */
+
+
+body h2 {
+    text-align: center;
+}
+
+#contact { 
+    width: 700px;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+input[name="name"],
+input[name="subject"],
+input[name="number"],
+input[name="email"] {
+    width: 250px;
+    padding: 10px;
+    margin: 0 auto 20px auto;
+    border-bottom: 1px solid #000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+input[name="name"]:hover {
+    background: rgba(128,128,128,0.1);  
+}
+input[name="subject"]:hover {
+    background: rgba(128,128,128,0.1);  
+}
+input[name="number"]:hover {
+    background: rgba(128,128,128,0.1);  
+}
+input[name="email"]:hover {
+    background: rgba(128,128,128,0.1);  
+}
+
+#contact textarea {
+    width: 600px;
+    height: 200px;
+    margin: auto;
+    overflow: auto;
+    border: 1px solid #000;
+}
+
+                        /* ============ BLOG CLASSES ============ */
+
+#blog { 
+    padding: 0px 0px 100px 0px;
+}
+#blog h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+#blog h2 {
+    font-size: 20px;
+    margin-top: -30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+body #blog table {
+    padding: 5px;
+    margin: auto;
+    border: 2px solid #000;
+    font-family: 'Raleway', sans-serif;
+}
+
+body #blog table img {
+    margin: 0 5px 0 5px;
+    padding: 0;
+}
+
+body #blog table h3 {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    margin: 0 20px 0 20px;
+}
+
+body #blog table p {
+    width: 635px;
+    height: 200px;
+    padding-top: 10px;
+    margin: 0;
+    overflow: auto;
+    text-align: left;
+    border-top: 1px solid #000;
+    font-size: 14px;
+}
+
+
+                        /* ============ FOOTER NAVIGATION ============ */
+
+
+footer nav ul {
+    width: 100%;
+	list-style-type: none;
+	padding: 5px;
+    margin: 70px 0 0 0;
+	overflow: auto;
+	background-color: #000;
+	opacity: 0.8;
+}
