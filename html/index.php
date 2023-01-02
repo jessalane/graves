@@ -12,7 +12,7 @@ $graves = [];
 
 ?>
 <div id="openUpload" class="uploadDialog">
-    <div><a href="#close" title="close" class="close">X</a>
+    <div>
         </header>
         <!-- ======== hero ======== -->
         <section id="hero"><!-- begin hero -->
