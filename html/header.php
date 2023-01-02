@@ -1,6 +1,6 @@
 <?php 
-    require_once('database.php'); 
-    require_once('functions.php'); 
+    require_once('./php/database.php'); 
+    require_once('./php/functions.php'); 
     $errors = [];
 ?>
 <!DOCTYPE html>
