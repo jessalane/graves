@@ -1,4 +1,4 @@
-<?php require_once('functions.php');
+<?php require_once('../php/functions.php');
 
     // Start the session
     session_start();
